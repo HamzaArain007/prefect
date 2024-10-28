@@ -1,0 +1,9 @@
+
+# Build deloyment 
+prefect deployment build ./basic.py:etl_flow  --name demo
+
+# Deploye yaml file to server
+prefect deployment apply ./etl_flow-deployment.yaml 
+
+# Prefect agent to look for further command to fun flow on specific time.
+prefect agent start -q 'default'
