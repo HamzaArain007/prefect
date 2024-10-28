@@ -1,3 +1,5 @@
+# start dashboard
+prefect server start
 
 # Build deloyment 
 prefect deployment build ./basic.py:etl_flow  --name demo
